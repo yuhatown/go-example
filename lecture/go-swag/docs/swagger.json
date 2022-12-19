@@ -1,0 +1,121 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {}
+    },
+    "paths": {
+        "/acc/v01/PutName": {
+            "put": {
+                "description": "api test를 위한 기능",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "call PutName, return ok by json",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "User name",
+                        "name": "name",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "User age",
+                        "name": "age",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controller.Controller"
+                        }
+                    }
+                }
+            }
+        },
+        "/acc/v01/ok": {
+            "get": {
+                "description": "api test를 위한 기능",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "call GetOK, return ok by json",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "User name",
+                        "name": "name",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controller.Controller"
+                        }
+                    }
+                }
+            }
+        },
+        "/acc/v01/post": {
+            "post": {
+                "description": "api test를 위한 기능",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "call Post, return ok by json",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "User name",
+                        "name": "name",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "User age",
+                        "name": "age",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "User pum",
+                        "name": "pnum",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controller.Controller"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "controller.Controller": {
+            "type": "object"
+        }
+    }
+}
